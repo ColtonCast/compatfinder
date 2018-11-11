@@ -1,0 +1,17 @@
+.container {
+    width:80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: black;
+    border: 10 10 10 10;
+    border-color: red;
+}
+
+.box {
+    background-color: cyan;
+    width: 10%;
+    height: 10%;
+}
+.okay {
+    color: palegreen;
+}

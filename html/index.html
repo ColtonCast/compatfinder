@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>FriendFinder</title>
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <!-- Chosen -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+</head>
+<body class="container">
+  <div class="box">
+  <h1>YEEEAAH SHIT ROOOCKS</h1>
+  
+  <select class="chosen-select" id="q1" style="display: none;">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+  </div>
+  <div class="Qcontainer">
+        <form onsubmit="return make_json(this);">
+            First Name: <input type="text" name="username">
+            photo link: <input type="text" link="photolink">
+            <br>
+            <p> You are walking and as you are about to take a step you look to see an ant right where you are going to step. what do you do? </p>
+            <input type="radio" name="question1" value="1">HULK SMASH
+           
+            <input type="radio" name="question1" value="2">that ant was in the wrong place at the wrong time
+          
+            <input type="radio" name="question1" value="3">its just an ant. continue step
+            
+            <input type="radio" name="question1" value="4">ALL life is precious
+            
+            <input type="radio" name="question1" value="5">carefully step around ant and remain vigilant
+           
+           
+        
+        <div class="Wtitle" id="question2">
+            <p> Life is better when petting a dog</p>
+            <input type="radio" name="question2" value="1"> 1 strongly Disagree
+            
+            <input type="radio" name="question2" value="2"> 2
+            
+            <input type="radio" name="question2" value="3"> 3
+
+            <input type="radio" name="question2" value="4"> 4
+            
+            <input type="radio" name="question2" value="5"> 5 strongly agree
+            
+        </div>
+        <div class="Wtitle" id="question3">
+            <p> When someone is being an angry asshole you are more likely to think.. </p>
+            <input type="radio" name="question3" value="1"> "what an asshole"
+            <br>
+            <input type="radio" name="question3" value="2">"sucks to be them"
+            <br>
+            <input type="radio" name="question3" value="3">"must be Karma"
+            <br>
+            <input type="radio" name="question3" value="4">"everyone has a bad day"
+            <br>
+            <input type="radio" name="question3" value="5">"I wonder why they are so upset"
+            <br>
+        </div>
+        <div class="Wtitle" id="question4">
+            <p> you would rather have a steak than a salad</p>
+            <input type="radio" name="question4" value="1"> 1 strongly Agree
+            <br>
+            <input type="radio" name="question4" value="2"> 2
+            <br>
+            <input type="radio" name="question4" value="3"> 3
+            <br>
+            <input type="radio" name="question4" value="4"> 4
+            <br>
+            <input type="radio" name="question4" value="5"> 5 strongly Disagree
+            <br>
+        </div>
+        <div class="Wtitle" id="question5">
+            <p> you feel fine being alone for days on end</p>
+            <input type="radio" name="question5" value="1"> 1 strongly Agree
+            <br>
+            <input type="radio" name="question5" value="2"> 2
+            <br>
+            <input type="radio" name="question5" value="3"> 3
+            <br>
+            <input type="radio" name="question5" value="4"> 4
+            <br>
+            <input type="radio" name="question5" value="5"> 5 strongly Disagree
+            <br>
+        </div>
+        <div class="Wtitle" id="question6">
+            <p> if you could convert your current car to an electric vehicle free of charge you would.</p>
+            <input type="radio" name="question6" value="1"> 1 strongly Agree
+            <br>
+            <input type="radio" name="question6" value="2"> 2
+            <br>
+            <input type="radio" name="question6" value="3"> 3
+            <br>
+            <input type="radio" name="question6" value="4"> 4
+            <br>
+            <input type="radio" name="question6" value="5"> 5 strongly Disagree
+            <br>
+        </div>
+        <div class="Wtitle" id="question7">
+            <p> you prefer warm weather over cold weather.</p>
+            <input type="radio" name="question7" value="1"> 1 strongly Agree
+            <br>
+            <input type="radio" name="question7" value="2"> 2
+            <br>
+            <input type="radio" name="question7" value="3"> 3
+            <br>
+            <input type="radio" name="question7" value="4"> 4
+            <br>
+            <input type="radio" name="question7" value="5"> 5 strongly Disagree
+            <br>
+        </div>
+        <div class="Wtitle" id="question8">
+            <p> if you could have a pet bear, lion or tiger that wouldn't eat you, you would totally have one</p>
+            <input type="radio" name="question8" value="1"> 1 strongly Agree
+            <br>
+            <input type="radio" name="question8" value="2"> 2
+            <br>
+            <input type="radio" name="question8" value="3"> 3
+            <br>
+            <input type="radio" name="question8" value="4"> 4
+            <br>
+            <input type="radio" name="question8" value="5"> 5 strongly Disagree
+            <br>
+        </div>
+        <div class="Wtitle" id="question9">
+            <p> if you knew you would be selected to be a first pioneer to visit mars how likely are you to sign up?</p>
+            <input type="radio" name="question9" value="1"> 1 very likely
+            <br>
+            <input type="radio" name="question9" value="2"> 2
+            <br>
+            <input type="radio" name="question9" value="3"> 3
+            <br>
+            <input type="radio" name="question9" value="4"> 4
+            <br>
+            <input type="radio" name="question9" value="5"> 5 not at all likely
+            <br>
+        </div>
+        <div class="Wtitle" id="question10">
+            <p> you accidentally find burried millions of dollars in the desert how likely are you to take it?</p>
+            <input type="radio" name="question10" value="1"> 1 very likely
+            <br>
+            <input type="radio" name="question10" value="2"> 2
+            <br>
+            <input type="radio" name="question10" value="3"> 3
+            <br>
+            <input type="radio" name="question10" value="4"> 4
+            <br>
+            <input type="radio" name="question10" value="5"> 5 not at all likely
+            <br>
+        </div>
+        <input type="submit" id="submitAnswers" value="make JSON">
+        </form>
+        <div id="output"></div>
+</body>
+
+  <script>
+
+  </script>
+  
+"jquery post res.json"
+</html>
